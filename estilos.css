@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Century Gothic', sans-serif;
+}
+
+h2.title-floor{
+    text-align: center;
+    color: #00AEEF;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.contenedor-first-floor-web{
+    height: 100vh !important;
+}
+
+text.st2.st3.st4{
+    font-family: 'Century Gothic', sans-serif !important;
+    font-size: 16px;
+}
+
+svg#Capa_1 {
+    height: 100vh;
+    /*margin: auto;*/
+    display: flex;
+}
+
+.containerContent {
+    display: flex;
+}
+
+.contenedor-mapa {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/*.contenedor-popup {
+    box-shadow: -10px 20px 20px rgba(0, 0, 0, 0.10);
+}*/
+/*.contenedor-popup {
+    border-left: 1px solid #d0d0d0;
+}*/
+
+#LaEstanciaArgentina:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#ElPrimo:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Temakase:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Holyshakes:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#TeaLeaf:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#Mitchs:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#TheWagyu:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#MiamiSwimmingAcademy:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#Crema:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#DrunkenDragon:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#Murano:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#Jaffa:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#Holi:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#GelatoGo:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#Anderson:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#LaPiazzeta:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#Doggis:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#TheBluesBurgers:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#JuiceMafia:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#DrLimon:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+#RepublicaCigarLounge:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Sokai:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#LaMisonH:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Zenzone:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Genias:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#_54D:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#OHLA:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Live:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#DentalSpecialities:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Mare:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#BoldNation:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Flippos:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Eco:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Furshman:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Semper:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#Yanamode:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#WolffLaw:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#BWH:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#OnFleekHair:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#TheSpot:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#MilanoBeautyStudios:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+#ClubPilates:hover{
+    fill:#00AEEF!important;
+    cursor: pointer;
+}
+
+ /* Estilo para el fondo oscuro detrás del pop-up */
+ #popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(238, 238, 238, 0.5);*/ /* Fondo semitransparente */
+    z-index: -999;
+}
+
+/* Estilo para el pop-up */
+#popup {
+    /*display: none;*/
+    width: 400px; /* Ancho del pop-up (ajusta según tus necesidades) */
+    height: auto; /* Altura del pop-up (ajusta según tus necesidades) */
+    background: #fff; /* Color de fondo */
+    border-radius: 0 0 20px 20px; /* Bordes redondeados (ajusta según tus necesidades) */
+    text-align: center; /* Centrar contenido horizontalmente */
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%, -50%);*/ /* Centrar vertical y horizontalmente */
+    z-index: 2;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);*/
+    /*border-top: 8px solid #00AEEF;*/
+    padding-bottom: 40px;
+    opacity: 0;
+    z-index: -1;
+}
+
+#popup.show {
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 0.8s ease-in-out;
+}
+
+button#close-button {
+    background: transparent;
+    border: none;
+    color: #000;
+    padding: 20px;
+    font-size: 16px;
+}
+button#close-button:hover {
+    cursor: pointer;
+}
+div#popup-content img {
+    width: 300px;
+    padding: 0px 20px;
+    margin: 50px 0 0;
+}
+
+div#contenedor-close {
+    text-align: right;
+}
+
+#nombreTenant{
+    font-weight: bold;
+    color: #000;
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+#descripcionTenant{
+    font-family: "Century Gothic", Sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0px;
+}
+
+#telefonoTenant{
+    font-family: "Century Gothic", Sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+a.izdadcha{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: #00AEEF;
+    font-size: 16px;
+    padding: 5px 0 6px;
+}
+a.izdadcha:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #00AEEF;
+    transition: left .8s;
+  }
+  
+a.izdadcha:hover:after {
+    left: 0;
+}
+
+#first-floor-web{
+    display: block;
+}
+
+#second-floor-web{
+    display: none;
+}
+
+#first-floor-mobile{
+    display: none;
+}
+
+#second-floor-mobile{
+    display: none;
+}
+
+.container-buttons-floor{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 0px;
+}
+
+.container-buttons-floor button.active{
+    background-color: #00AEEF !important;
+    color: #FFF;
+    border: 1px solid #00AEEF;
+    cursor: pointer;
+    font-family: 'Century Gothic', sans-serif;
+    padding: 15px 30px;
+    margin: 8px;
+    font-size: 1rem;
+}
+
+.container-buttons-floor button{
+    padding: 15px 30px;
+    margin: 8px;
+    background-color: #FFF;
+    color: #00AEEF;
+    border: 1px solid #00AEEF;
+    cursor: pointer;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1rem;
+}
+
+/*.modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: right 0.8s ease-in-out; 
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%; 
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    border-top: 8px solid #00AEEF;
+  }
+
+  div#contenedor-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 24px;
+    z-index: 99999;
+  }
+
+  img#logo{
+    width: 350px;
+    margin-top: 50px;
+  }
+*/
+
+div#modal-container {
+    display: none;
+    position: absolute;
+    min-height: 350px !important;
+    width: 280px !important;
+    background: white;
+    margin-right: 7vw;
+    border-top: 8px solid #00AEEF;
+    border-radius: 0px 0px 8px 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
+    right: 0;
+}
+#contenedor-close{
+    display: none
+}
+
+div#modal-content {
+    text-align: center;
+}
+div#modal-content {
+    width: 100% !important;
+}
+div#modal-content img {
+    width: 200px;
+}
+
+@media screen and (max-width: 768px){
+    #first-floor-web{
+        display: none;
+    }
+    
+    #second-floor-web{
+        display: none;
+    }
+    
+    #first-floor-mobile{
+        display: block;
+    }
+    
+    #second-floor-mobile{
+        display: none;
+    }
+
+    #popup{
+        width: 380px;
+    }
+
+    .modal-content{
+        width: 90%;
+    }
+    div#modal-container {
+        margin-right: 0;
+        top: 30%;
+        margin: auto;
+        left: 0%;
+    }
+    div#contenedor-close{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 30px;
+        margin-right: 20px;
+        font-size: 24px;
+        z-index: 99999;
+    }
+}
